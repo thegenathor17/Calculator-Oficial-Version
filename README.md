@@ -1,5 +1,5 @@
 The Genathor Times|
-The News (Beta 4.0):|
+The News (Version 1.0.0):|
 GREAT UPDATE!!!|
 ·2 Secret comments added in the code|
 ·"ERROR002" Added|
@@ -8,7 +8,8 @@ GREAT UPDATE!!!|
 ·Partial code restructuring|
 ·Much more secrets, have fun looking for them yourself (it is not worth looking at the code)|
 ·The code reached the 200 lines!!!!|
-That was the news of the update (Beta 4.0). This time there were many things and very laborious, Happy Sunday!!!|
+·The Oficial Version of the Calculator Is Ready!!!|
+That was the news of the update (Version 1.0.0). This time there were many things and very laborious (and problematics!!!!), Happy Sunday!!!|
 The News (Beta 3.0):|
 THE GREAT INDEPENDENCE!!!|
 ·THE CALCULATOR IS NOW AVAILABLE ON MEDIAFIRE!!! (https://www.mediafire.com/file/v4q5ox5dur8m4ne/Calculadora.rar/file)|
