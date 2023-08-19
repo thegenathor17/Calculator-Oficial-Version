@@ -1,201 +1,145 @@
 ﻿//what are you doing here? 🤨🤨🤨🤨
-namespace Metodos
+using System;
+namespace Calculator
 {
     class Program
     {
         static void Main(string[] args)
         {
-            bool ERROR002 = false;
-            string Operacion;
             Console.WriteLine("Welcome to Nahum's calculator!!!");
-            // I am going to ask you to use commas instead of points in case the numbers you are going to use are decimals, example: 123,123
             while (true)
             {
-                Console.WriteLine("Choose what you want to do, mark 1 to add two numbers, mark 2 to subtract two numbers, mark 3 to multiply 2 numbers or mark 4 to divide two numbers");
-                Operacion = Console.ReadLine();
-                if (Operacion == "1") //Suma
-                {
-                    string num1;
-                    string num2;
-                    Console.WriteLine("Write the first number you want to add: ");
-                    num1 = Console.ReadLine();
-                    Console.WriteLine("Write the second number you want to add: ");
-                    num2 = Console.ReadLine();
-                    int Point2 = num2.IndexOf(',');
-                    int Point1 = num1.IndexOf(',');
-                    if (Point1 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point1 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Sumar(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-                    if (Point2 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point2 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Sumar(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-
-
-
-                }
-                else if (Operacion == "2") //Resta
-                {
-                    string num1;
-                    string num2;
-                    Console.WriteLine("Write the first number: ");
-                    num1 = Console.ReadLine();
-                    Console.WriteLine("Write the number that you want to subtract: ");
-                    num2 = Console.ReadLine();
-                    int Point2 = num2.IndexOf(',');
-                    int Point1 = num1.IndexOf(',');
-                    if (Point1 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point1 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Restar(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-                    if (Point2 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point2 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Restar(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-                }
-                else if (Operacion == "3") //Multiplicacion
-                {
-                    string num1;
-                    string num2;
-                    Console.WriteLine("Write the first number: ");
-                    num1 = Console.ReadLine();
-                    Console.WriteLine("Write the second number: ");
-                    num2 = Console.ReadLine();
-                    int Point2 = num2.IndexOf(',');
-                    int Point1 = num1.IndexOf(',');
-                    if (Point1 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point1 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Multiplicar(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-                    if (Point2 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point2 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Multiplicar(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-                }
-                else if (Operacion == "4") //Division
-                {
-                    string num1;
-                    string num2;
-                    Console.WriteLine("Write the divisor: ");
-                    num1 = Console.ReadLine();
-                    Console.WriteLine("Write the dividend: ");
-                    num2 = Console.ReadLine();
-                    int Point2 = num2.IndexOf(',');
-                    int Point1 = num1.IndexOf(',');
-                    if (Point1 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point1 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Dividir(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-                    if (Point2 == -1)
-                    {
-                        Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
-                    }
-                    else if (Point2 != -1)
-                    {
-                        decimal miInteger1 = decimal.Parse(num1);
-                        decimal miInteger2 = decimal.Parse(num2);
-                        decimal res = Dividir(miInteger1, miInteger2);
-                        Console.WriteLine("Your result is: {0}", res);
-                    }
-
-                }
-                else if (ERROR002 == true)
-                {
-                    Console.WriteLine("ERROR 002, Please don't use points");
-                }
-                else if (Operacion == "17032010")
-                {
-                    Console.WriteLine("Nahum... Much Work!");
-                }
-                else if (Operacion == "02122002")
-                {
-                    Console.WriteLine("Ruth... Much Motivation!");
-                }
-                else if (Operacion == "26081976")
-                {
-                    Console.WriteLine("Feliz Cumple Olivia... Beta Tester!");
-                }
-                else if (Operacion == "10051999")
-                {
-                    Console.WriteLine("Isaac... Motivation!");
-                }
-                else
-                {
-                    Console.WriteLine("ERROR 001, Try again.");
-                }
-
+                Console.WriteLine("Choose an operation: 1 (add), 2 (subtract), 3 (multiply), 4 (divide)");
+                string operacion = Console.ReadLine();
+                calculadora(operacion);
             }
-            static decimal Sumar(decimal num1, decimal num2)
+
+        }
+
+        static void calculadora(string operacion) //obtiene los numeros, hace las operaciones , 
+        {
+            Console.WriteLine("Enter the first number: ");
+            string numero1 = Console.ReadLine();
+            Console.WriteLine("Enter the second number: ");
+            string numero2 = Console.ReadLine();
+            int punto1 = numero1.IndexOf('.');
+            int punto2 = numero2.IndexOf('.');
+            decimal result = 0;
+            try
             {
-                return num1 + num2;
+                switch (operacion)
+                {
+                    case "1": //suma
+                        if (punto1 == -1 && punto2 == -1)
+                        {
+                            int num1 = int.Parse(numero1);
+                            int num2 = int.Parse(numero2);
+                            result = num1 + num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
+                        break;
+                    case "2": //resta
+                        if (punto1 == -1 && punto2 == -1)
+                        {
+                            int num1 = int.Parse(numero1);
+                            int num2 = int.Parse(numero2);
+                            result = num1 - num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
+                        break;
+                    case "3": //multiplicacion
+                        if (punto1 == -1 && punto2 == -1)
+                        {
+                            int num1 = int.Parse(numero1);
+                            int num2 = int.Parse(numero2);
+                            result = num1 * num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
+                        break;
+                    case "4": //division ☠
+                        if (punto1 == -1 && punto2 == -1)
+                        {
+                            int num1 = int.Parse(numero1);
+                            int num2 = int.Parse(numero2);
+                            result = num1 / num2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
+                        break;
+                    case "17032010":
+                        Console.WriteLine("Nahum... Much Development!!!");
+                        break;
+                    case "02122002":
+                        Console.WriteLine("Ruth... Much Beta Testing!!!");
+                        break;
+                    case "26081976":
+                        Console.WriteLine("Feliz cumplenios Olivia... Much Beta Testing!!!");
+                        break;
+                    case "10051999":
+                        Console.WriteLine("Isaac... Much Moral Support");
+                        break;
+                    case "052020":
+                        Console.WriteLine("Special thanks to chat gpt, they help me with ideas (they don't wrote any part of the code)");
+                        break;
+                    default:
+                        Console.WriteLine("ERROR 001, Try again");
+                        break;
+                }
+
+                Console.WriteLine("Your result is: {0}", result);
             }
-            static decimal Restar(decimal num1, decimal num2)
+            catch (PathTooLongException)
             {
-                return num1 - num2;
+                Console.WriteLine("ERROR 006, To much numbers");
             }
-            static decimal Multiplicar(decimal num1, decimal num2)
+            catch (DivideByZeroException)
             {
-                return num1 * num2;
+                Console.WriteLine("ERROR 003, You can't divide by zero");
             }
-            static decimal Dividir(decimal num1, decimal num2)
+            catch (ArgumentNullException)
             {
-                return num1 / num2;
+                Console.WriteLine("ERROR  004, Please write all the numbers needed");
             }
-            //Nivel de acceso - (static) - Tipo de retorno - Nombre del metodo (Parametro 1, Parametro 2)
-            //I have a little problem guys, i can't push with git to update the repository, but if you are reading it, I was finally able to push!!!
-            //I was finally able to push :)!!!
-            // I am going to ask you to use commas instead of points in case the numbers you are going to use are decimals, example: 123,123 FINALLY DELETED
-            //Oficial version!!!
+            catch (Exception)
+            {
+                Console.WriteLine("ERROR 005, Something went wrong");
+            }
+
         }
     }
 }
+//bool ERROR002 = false;
+
+// I am going to ask you to use commas instead of points in case the numbers you are going to use are decimals, example: 123,123
+
+//  else if (num1 == "0")
+//  {
+//      Console.WriteLine("ERROR 003, the division cannot contain a 0");
+//  }
+//  else if (num2 == "0")
+//  {
+//      Console.WriteLine("ERROR 003, the division cannot contain a 0");
+//  }
+//  else if (ERROR002 == true)
+//  {
+//      Console.WriteLine("ERROR 002, Please don't use points");
+//  }
+
+//Nivel de acceso - (static) - Tipo de retorno - Nombre del metodo (Parametro 1, Parametro 2)
+//I have a little problem guys, i can't push with git to update the repository, but if you are reading it, I was finally able to push!!!
+//I was finally able to push :)!!!
+// I am going to ask you to use commas instead of points in case the numbers you are going to use are decimals, example: 123,123 FINALLY DELETED
+//Oficial version!!!
+//Bugs fixed
+//thanks Chat GPT
