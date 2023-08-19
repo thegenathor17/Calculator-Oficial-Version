@@ -1,4 +1,14 @@
 The Genathor Times|
+The News (Version 1.2.0)|
+GREAT UPDATE!!!!|
+·"ERROR 003" Added, this error happens when you want to divide by 0|
+·"ERROR 004" Added, this error happens when you don't add all the requested numbers|
+·"ERROR 005" Added, Something went wrong!!!|
+·"ERROR 006" Added, too many numbers|
+·TOTAL CODE RESTRUCTURATION!!!!|
+·Minimal changes to easter eggs|
+·Too many new comentaries added|
+That was the news of the update (Version 1.2.0). This time there were many things and very laborious (and problematics!!!!), Happy Saturday!!!|
 The News (Version 1.0.0):|
 GREAT UPDATE!!!|
 ·2 Secret comments added in the code|
