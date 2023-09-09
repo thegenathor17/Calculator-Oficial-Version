@@ -1,4 +1,8 @@
 The Genathor Times|
+The News (Version 1.3.0)|
+GREAT UPDATE|
+·Fractions added|
+Thanks for your attention|
 The News (Version 1.2.0)|
 GREAT UPDATE!!!!|
 ·"ERROR 003" Added, this error happens when you want to divide by 0|
