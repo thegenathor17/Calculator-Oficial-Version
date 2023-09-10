@@ -1,4 +1,7 @@
 The Genathor Times|
+The News (Version 1.3.2)|
+·Now you can raise numbers|
+Thanks for your attention|
 The News (Version 1.3.1)|
 ·Percentage added|
 Thanks for your attention!!|
