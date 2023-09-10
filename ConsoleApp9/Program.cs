@@ -9,7 +9,7 @@ namespace Calculator
             Console.WriteLine("Welcome to Nahum's calculator!!!");
             while (true)
             {
-                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9 (Discover percentage), 10 (Raise a number), 11 (Add raised numbers), 12 (Subtract raised numbers), 13 (Multiply raised numbers), 14 (Divide raised numbers), 15 (Discover the Square Root)");
+                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9 (Discover percentage), 10 (Raise a number), 11 (Add raised numbers), 12 (Subtract raised numbers), 13 (Multiply raised numbers), 14 (Divide raised numbers), 15 (Discover the Square Root), 16 (Discover the Cube Root)");
                 string operacion = Console.ReadLine();
                 calculadora(operacion);
             }
@@ -347,6 +347,21 @@ namespace Calculator
                             int num47 = int.Parse(numero47);
                             double result13 = Math.Sqrt(num47);
                             Console.WriteLine("Your result is: {0}", result13);
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
+                        break;
+                    case "16": //dividir numeros elevados
+                        Console.WriteLine("Enter the number of which you want to know the square root: ");
+                        string numero48 = Console.ReadLine();
+                        int punto48 = numero48.IndexOf('.');
+                        if (punto48 == -1)
+                        {
+                            int num48 = int.Parse(numero48);
+                            double result14 = Math.Cbrt(num48);
+                            Console.WriteLine("Your result is: {0}", result14);
                         }
                         else
                         {
