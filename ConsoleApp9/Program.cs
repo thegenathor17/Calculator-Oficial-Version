@@ -9,7 +9,7 @@ namespace Calculator
             Console.WriteLine("Welcome to Nahum's calculator!!!");
             while (true)
             {
-                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9 (Discover percentage), 10 (Raise a number), 11 (Add raised numbers), 12 (Subtract raised numbers), 13 (Multiply raised numbers), 14 (Divide raised numbers)");
+                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9 (Discover percentage), 10 (Raise a number), 11 (Add raised numbers), 12 (Subtract raised numbers), 13 (Multiply raised numbers), 14 (Divide raised numbers), 15 (Discover the Square Root)");
                 string operacion = Console.ReadLine();
                 calculadora(operacion);
             }
@@ -102,7 +102,7 @@ namespace Calculator
                             Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
                         }
                         break;
-                    case "5":
+                    case "5": //Suma de Fracciones
                         decimal result5 = 0;
                         Console.WriteLine("Fine, write the numerator and denominator of the first fraction");
                         Console.WriteLine("Enter the numerator: ");
@@ -123,7 +123,7 @@ namespace Calculator
                         result5 = firstF + secondF;
                         Console.WriteLine("Your result is: {0}", result5);
                         break;
-                    case "6":
+                    case "6": //Resta de Fracciones
                         decimal result6 = 0;
                         Console.WriteLine("Fine, write the numerator and denominator of the first fraction");
                         Console.WriteLine("Enter the numerator: ");
@@ -144,7 +144,7 @@ namespace Calculator
                         result6 = firstFS - secondFS;
                         Console.WriteLine("Your result is: {0}", result6);
                         break;
-                    case "7":
+                    case "7": //Multiplicacion de Fracciones
                         decimal result7 = 0;
                         Console.WriteLine("Fine, write the numerator and denominator of the first fraction");
                         Console.WriteLine("Enter the numerator: ");
@@ -165,7 +165,7 @@ namespace Calculator
                         result7 = firstFM * secondFM;
                         Console.WriteLine("Your result is: {0}", result7);
                         break;
-                    case "8":
+                    case "8":  //Dividir Fracciones
                         decimal result8 = 0;
                         Console.WriteLine("Fine, write the numerator and denominator of the first fraction");
                         Console.WriteLine("Enter the numerator: ");
@@ -186,7 +186,7 @@ namespace Calculator
                         result8 = firstFD / secondFD;
                         Console.WriteLine("Your result is: {0}", result8);
                         break;
-                    case "9":
+                    case "9": //Descubrir Porcentaje
                         decimal result9 = 0;
                         Console.WriteLine("Enter the initial number: ");
                         string numero27 = Console.ReadLine();
@@ -207,7 +207,7 @@ namespace Calculator
                             Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
                         }
                         break;
-                    case "10":
+                    case "10": //elevar un numero
                         Console.WriteLine("Enter the base number: ");
                         string numero29 = Console.ReadLine();
                         Console.WriteLine("Enter the exponent: ");
@@ -226,7 +226,7 @@ namespace Calculator
                             Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
                         }
                         break;
-                    case "11":
+                    case "11": //Sumar numeros elevados
                         Console.WriteLine("Enter the first base number: ");
                         string numero31 = Console.ReadLine();
                         Console.WriteLine("Enter the first exponent: ");
@@ -251,7 +251,7 @@ namespace Calculator
                             Console.WriteLine("Your result is: {0}", result11);
                         }
                         break;
-                    case "12":
+                    case "12": //Restar numeros elevados
                         Console.WriteLine("Enter the first base number: ");
                         string numero35 = Console.ReadLine();
                         Console.WriteLine("Enter the first exponent: ");
@@ -280,7 +280,7 @@ namespace Calculator
                             Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
                         }
                         break;
-                    case "13":
+                    case "13": //Multiplicar numeros elevados
                         Console.WriteLine("Enter the first base number: ");
                         string numero39 = Console.ReadLine();
                         Console.WriteLine("Enter the first exponent: ");
@@ -309,7 +309,7 @@ namespace Calculator
                             Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
                         }
                         break;
-                    case "14":
+                    case "14": //dividir numeros elevados
                         Console.WriteLine("Enter the first base number: ");
                         string numero43 = Console.ReadLine();
                         Console.WriteLine("Enter the first exponent: ");
@@ -331,6 +331,21 @@ namespace Calculator
                             int num46 = int.Parse(numero46);
                             double resultE = Math.Pow(num45, num46);
                             double result13 = resultF / resultE;
+                            Console.WriteLine("Your result is: {0}", result13);
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
+                        break;
+                    case "15": //dividir numeros elevados
+                        Console.WriteLine("Enter the number of which you want to know the square root: ");
+                        string numero47 = Console.ReadLine();
+                        int punto47 = numero47.IndexOf('.');
+                        if (punto47 == -1)
+                        { 
+                            int num47 = int.Parse(numero47);
+                            double result13 = Math.Sqrt(num47);
                             Console.WriteLine("Your result is: {0}", result13);
                         }
                         else
