@@ -9,7 +9,7 @@ namespace Calculator
             Console.WriteLine("Welcome to Nahum's calculator!!!");
             while (true)
             {
-                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions)");
+                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9(Discover percentage)");
                 string operacion = Console.ReadLine();
                 calculadora(operacion);
             }
@@ -185,6 +185,27 @@ namespace Calculator
                         decimal secondFD = num25 / num26;
                         result8 = firstFD / secondFD;
                         Console.WriteLine("Your result is: {0}", result8);
+                        break;
+                    case "9":
+                        decimal result9 = 0;
+                        Console.WriteLine("Enter the initial number: ");
+                        string numero27 = Console.ReadLine();
+                        Console.WriteLine("Enter the percentage that you want to know: ");
+                        string numero28 = Console.ReadLine();
+                        int punto27 = numero27.IndexOf('.');
+                        int punto28 = numero28.IndexOf('.');
+                        if (punto27 == -1 && punto28 == -1)
+                        {
+                            decimal num27 = decimal.Parse(numero27);
+                            decimal num28 = decimal.Parse(numero28);
+                            decimal total = num27 * num28;
+                            result9 = total / 100;
+                            Console.WriteLine("Your result is: {0}", result9);
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                        }
                         break;
                     case "17032010":
                         Console.WriteLine("Nahum... Much Development!!!");
