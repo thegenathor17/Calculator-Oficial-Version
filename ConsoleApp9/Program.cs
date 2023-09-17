@@ -9,7 +9,7 @@ namespace Calculator
             Console.WriteLine("Welcome to Nahum's calculator!!!");
             while (true)
             {
-                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9 (Discover percentage), 10 (Raise a number), 11 (Add raised numbers), 12 (Subtract raised numbers), 13 (Multiply raised numbers), 14 (Divide raised numbers), 15 (Discover the Square Root), 16 (Discover the Cube Root)");
+                Console.WriteLine("Choose an operation: 1 (Add), 2 (Subtract), 3 (Multiply), 4 (Divide), 5 (Fraction addition),6 (Fraction substraction), 7 (Multiply fraccion), 8 (Divide fraccions), 9 (Discover percentage), 10 (Raise a number), 11 (Add raised numbers), 12 (Subtract raised numbers), 13 (Multiply raised numbers), 14 (Divide raised numbers), 15 (Discover the Square Root), 16 (Discover the Cube Root), 17 (Conversions menu)");
                 string operacion = Console.ReadLine();
                 calculadora(operacion);
             }
@@ -368,6 +368,297 @@ namespace Calculator
                             Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
                         }
                         break;
+                    case "17":
+                        Console.WriteLine("Welcome to the conversions menu! 1 (Length), 2 (Weight): ");
+                        Console.WriteLine("Soon!");
+                        Console.WriteLine("3 (Pressure), 4 (Fuel Consumption), 5 (Energy), 6 (Frequency), 7 (Data Size), 8 (Data Transmission Rate), 9 (Temperature), 10 (Time), 11 (Speed), 12 (Volume), 13 (Plane Angle), 14 (Area).");
+                        string operacion3 = Console.ReadLine();
+                        switch (operacion3)
+                        {
+                            case "1":
+                                Console.WriteLine("Welcome to the length conversion menu! 1 (Centimeters to Inches), 2 (Inches to Centimeters), 3 (Centimeters to Feet), 4 (Feet to Centimeters), 5 (Meters to Yards), 6 (Yards to Meters), 7 (Kilometers to Miles), 8 (Miles to Kilometers), 9 (Kilometers to Nautical Miles), 10 (Nautical Miles to Kilometers), 11 (Miles to Nautical Miles), 12 (Nautical Miles to Miles), 13 (Go to Main Menu):");
+                                string operacionLongitud = Console.ReadLine();
+                                sbyte numeroWhile1 = 1;
+                                while (numeroWhile1 == 1)
+                                {
+                                    switch (operacionLongitud)
+                                    {
+                                        case "1": //transforma centimetros en pulgadas
+                                            Console.WriteLine("Enter the centimeters you want to convert: ");
+                                            string centimeters = Console.ReadLine();
+                                            int punto50 = centimeters.IndexOf(".");
+                                            if (punto50 == -1)
+                                            {
+                                                double centimetros = double.Parse(centimeters);
+                                                Console.WriteLine(centimetros / 2.54);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+
+                                        case "2": //convierte pulgadas en centimetros
+                                            Console.WriteLine("Enter the inches you want to convert: ");
+                                            string inches = Console.ReadLine();
+                                            int punto49 = inches.IndexOf(".");
+                                            if (punto49 == -1)
+                                            {
+                                                double pulgadas = double.Parse(inches);
+                                                Console.WriteLine(pulgadas * 2.54);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "3": //convierte centimetros  en pies
+                                            Console.WriteLine("Enter the centimeters you want to convert: ");
+                                            string centimeters2 = Console.ReadLine();
+                                            int punto57 = centimeters2.IndexOf(".");
+                                            if (punto57 == -1)
+                                            {
+                                                double centimetros = double.Parse(centimeters2);
+                                                Console.WriteLine(centimetros / 30.48);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "4": //transforma pies en centimetros
+                                            Console.WriteLine("Enter the feets you want to convert: ");
+                                            string feets = Console.ReadLine();
+                                            int punto58 = feets.IndexOf(".");
+                                            if (punto58 == -1)
+                                            {
+                                                double pies = double.Parse(feets);
+                                                Console.WriteLine(pies * 30.48);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "5": //transforma yardas en metros
+                                            Console.WriteLine("Enter the meters you want to convert: ");
+                                            string meters = Console.ReadLine();
+                                            int punto51 = meters.IndexOf(".");
+                                            if (punto51 == -1)
+                                            {
+                                                double metros = double.Parse(meters);
+                                                Console.WriteLine(metros * 1.094);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "6": //transforma metros en yardas
+                                            Console.WriteLine("Enter the meters you want to convert: ");
+                                            string yards = Console.ReadLine();
+                                            int punto52 = yards.IndexOf(".");
+                                            if (punto52 == -1)
+                                            {
+                                                double yardas = double.Parse(yards);
+                                                Console.WriteLine(yardas / 1.094);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "7": //transforma kilometros en millas
+                                            Console.WriteLine("Enter the kilometers you want to convert: ");
+                                            string kilometers = Console.ReadLine();
+                                            int punto56 = kilometers.IndexOf(".");
+                                            if (punto56 == -1)
+                                            {
+                                                double kilometros = double.Parse(kilometers);
+                                                Console.WriteLine(kilometros / 1.609);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "8": //transforma millas en kilometros
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string miles = Console.ReadLine();
+                                            int punto55 = miles.IndexOf(".");
+                                            if (punto55 == -1)
+                                            {
+                                                double millas = double.Parse(miles);
+                                                Console.WriteLine(millas * 1.609);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "9": //transforma kilometros en millas nauticas
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string milesN = Console.ReadLine();
+                                            int punto59 = milesN.IndexOf(".");
+                                            if (punto59 == -1)
+                                            {
+                                                double millasN = double.Parse(milesN);
+                                                Console.WriteLine(millasN / 1.852);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                       case "10": //transforma millas nauticass en kilometros
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string kilometersN = Console.ReadLine();
+                                            int punto60 = kilometersN.IndexOf(".");
+                                            if (punto60 == -1)
+                                            {
+                                                double kilometrosN = double.Parse(kilometersN);
+                                                Console.WriteLine(kilometrosN * 1.852);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "11": //transforma millas en millas nauticas
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string kilometersT = Console.ReadLine();
+                                            int punto61 = kilometersT.IndexOf(".");
+                                            if (punto61 == -1)
+                                            {
+                                                double kilometrosT = double.Parse(kilometersT);
+                                                Console.WriteLine(kilometrosT / 1.151);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "12": //transforma millas nauticas en millas
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string milesT = Console.ReadLine();
+                                            int punto62 = milesT.IndexOf(".");
+                                            if (punto62 == -1)
+                                            {
+                                                double millasT = double.Parse(milesT);
+                                                Console.WriteLine(millasT * 1.151);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "13":
+                                            numeroWhile1++;
+                                            break;
+                                    }
+                                }
+                                break;
+                            case "2":
+                                Console.WriteLine("Welcome to the weight conversion menu! 1 (Gram to Ounce), 2 (Ounce to Gram), 3 (Gram to Pound), 4 (Pound to Gram), 5 (Kilogram to Stone), 6 (Stone to Kilogram): ");
+                                string operacionPeso = Console.ReadLine();
+                                sbyte numeroWhile2 = 1;
+                                while (numeroWhile2 != 0)
+                                {
+                                    switch (operacionPeso)
+                                    {
+                                        case "1": //gramos onzas
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string grams = Console.ReadLine();
+                                            int punto63 = grams.IndexOf(".");
+                                            if (punto63 == -1)
+                                            {
+                                                double gramos = double.Parse(grams);
+                                                Console.WriteLine(gramos / 28.35);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "2": //onzas gramos 
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string ounce = Console.ReadLine();
+                                            int punto64 = ounce.IndexOf(".");
+                                            if (punto64 == -1)
+                                            {
+                                                double onzas = double.Parse(ounce);
+                                                Console.WriteLine(onzas * 28.35);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "4": //gramos libras
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string pound = Console.ReadLine();
+                                            int punto65 = pound.IndexOf(".");
+                                            if (punto65 == -1)
+                                            {
+                                                double libra = double.Parse(pound);
+                                                Console.WriteLine(libra / 453.6);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "5": //libras gramos
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string gram2 = Console.ReadLine();
+                                            int punto66 = gram2.IndexOf(".");
+                                            if (punto66 == -1)
+                                            {
+                                                double gramos2 = double.Parse(gram2);
+                                                Console.WriteLine(gramos2 * 28.35);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "6": //libras gramos
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string kilogram = Console.ReadLine();
+                                            int punto67 = kilogram.IndexOf(".");
+                                            if (punto67 == -1)
+                                            {
+                                                double kilo = double.Parse(kilogram);
+                                                Console.WriteLine(kilo / 6.35);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "7": //libras gramos
+                                            Console.WriteLine("Enter the miles you want to convert: ");
+                                            string stone = Console.ReadLine();
+                                            int punto68 = stone.IndexOf(".");
+                                            if (punto68 == -1)
+                                            {
+                                                double piedra = double.Parse(stone);
+                                                Console.WriteLine(piedra * 6.35);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("ERROR 002, Please don't use points, if you want add a decimal number use commas");
+                                            }
+                                            break;
+                                        case "8":
+                                            numeroWhile2++;
+                                            numeroWhile2++;
+                                            break;
+                                    }
+                                }
+                                break;
+                        }
+                        break;
                     case "17032010":
                         Console.WriteLine("Nahum... Much Development!!!");
                         break;
@@ -383,7 +674,6 @@ namespace Calculator
                     case "052020":
                         Console.WriteLine("Special thanks to chat gpt, they help me with ideas (they don't wrote any part of the code)");
                         break;
-                    
                     default:
                         Console.WriteLine("ERROR 001, Try again");
                         break;
