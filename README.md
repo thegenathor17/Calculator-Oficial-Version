@@ -1,4 +1,8 @@
 The Genathor Times|
+The News (Version 2.0.0)|
+GREAT UPDATE!!!!!!!|
+·First part of the conversions menu added| 
+Thanks for your  attention|
 The News (Version 1.3.4)|
 ·Cube Root Added|
 Thanks for your attention|
