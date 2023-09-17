@@ -1,7 +1,10 @@
 The Genathor Times|
+The News (Version 1.3.4)|
+·Cube Root Added|
+Thanks for your attention|
 The News (Version 1.3.3)|
 ·Square Root Added|
-THanks For Your Attention|
+Thanks for your attention|
 The News (Version 1.3.2)|
 ·Now you can raise numbers|
 Thanks for your attention|
