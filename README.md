@@ -4,7 +4,9 @@ This is the official development diary
 
 
 ## Calculator With CSS News
-The News (Version 2.1.0)  ·Partially refactored code  Thanks for your attention
+The News (Version 2.1.0)  
+·Partially refactored code  
+Thanks for your attention
 The News (Version 2.0.0)  
 GREAT UPDATE!!!!!!!  
 ·First part of the conversions menu added   
